@@ -1,0 +1,34 @@
+Hardware Required:
+● ESP32 development board
+● DHT11 Sensor
+● Connecting Wires
+Software Required:
+● Google Firebase
+● Arduino IDE
+Connections:
+● Gnd – gnd
+● Data – D14
+● Vcc – 3v3
+Required libraries :
+Open the library manager then install the following libraries ,
+1. DHT sensor library
+2. Adafruit Unified Sensor library
+Procedure :
+● get up the ESP32 and DHT11 connect to the correct pins followed by the respective
+connections.
+● Create database on Google Firebase and connect the firebase with the board using
+Firebase host and Firebase authentication key
+● Now run the program, You can see the output in serial monitor and also in google
+firebase Cloud.
+
+Firebase cloud instructions :
+Cloud platform link : https://firebase.google.com/
+● Click ‘Go to Console’ as highlighted in the red rectangular box.
+● You will be redirected to a new web page with the welcome message. Click the button
+‘Create a Project’
+● Write the name of your project. Remember to tick the Firebase term agreement. Now
+click ‘Continue’.
+● Go to the settings icon and click ‘Project Settings’., Now, go to ‘Service Accounts’ and
+click ‘Generate new private key’.copy it then paste it in code.
+● Next, Under the Build tab go to ‘Realtime Database.’ Then click ‘Create
+Database.’after that you will see the host link,then copy that then paste it in code.
