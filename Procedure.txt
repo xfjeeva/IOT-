@@ -63,3 +63,5 @@ click ‘Generate new private key’.copy it then paste it in code.
 ● Next, Under the Build tab go to ‘Realtime Database.’ Then click ‘Create
 
 Database.’after that you will see the host link,then copy that then paste it in code.
+
+private key - c964d9890f71499d392f63e545fa5764da13fb30
