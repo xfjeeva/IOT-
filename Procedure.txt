@@ -1,67 +1,78 @@
-Hardware Required:
+Good question 👍
 
-● ESP32 development board
+The code in your image is meant to be used inside TestComplete, an automated testing tool by SmartBear — not in a normal web browser or IDE.
 
-● DHT11 Sensor
+Here’s exactly how you can use it:
 
-● Connecting Wires
 
-Software Required:
+---
 
-● Google Firebase
+🧩 Steps to Run the Script in TestComplete
 
-● Arduino IDE
+Step 1:
+👉 Open TestComplete on your computer.
 
-Connections:
+Step 2:
+👉 Create a new project:
 
-● Gnd – gnd
+Go to File → New → New Project.
 
-● Data – D14
+Choose "JavaScript" as the scripting language.
 
-● Vcc – 3v3
 
-Required libraries :
+Step 3:
+👉 Add a new script file:
 
-Open the library manager then install the following libraries ,
+In the Project Explorer (left panel), right-click on the "Scripts" folder → choose Add → New Item → select Script.
 
-1. DHT sensor library
+Give it a name (e.g., Test1).
 
-2. Adafruit Unified Sensor library
 
-Procedure :
+Step 4:
+👉 Paste your code into the script editor:
+Copy the function Test1() code from your image and paste it there.
 
-● get up the ESP32 and DHT11 connect to the correct pins followed by the respective
+Step 5:
+👉 Adjust any variables or URLs:
 
-connections.
+For example, replace "enter your email" and Project.Variables.Password2 with your actual test data.
 
-● Create database on Google Firebase and connect the firebase with the board using
+Ensure the page structure (Aliases.browser.pageLoginGeeksforgeeks...) matches what TestComplete recorded for your webpage.
 
-Firebase host and Firebase authentication key
 
-● Now run the program, You can see the output in serial monitor and also in google
+Step 6:
+👉 Run the test:
 
-firebase Cloud.
+Click on the green Run button (or press F5).
 
-Firebase cloud instructions :
+TestComplete will launch the browser (Chrome in this case) and execute your script step-by-step.
 
-Cloud platform link : https://firebase.google.com/
 
-● Click ‘Go to Console’ as highlighted in the red rectangular box.
+Step 7:
+👉 View Results:
+After execution, check the Test Log (bottom panel) for results — it shows passed, failed, and warning messages.
 
-● You will be redirected to a new web page with the welcome message. Click the button
 
-‘Create a Project’
+---
 
-● Write the name of your project. Remember to tick the Firebase term agreement. Now
+⚙️ Optional (Recording the Test Automatically)
 
-click ‘Continue’.
+If you prefer not to type the script manually:
 
-● Go to the settings icon and click ‘Project Settings’., Now, go to ‘Service Accounts’ and
+1. Create a new project.
 
-click ‘Generate new private key’.copy it then paste it in code.
 
-● Next, Under the Build tab go to ‘Realtime Database.’ Then click ‘Create
+2. Click Record Test.
 
-Database.’after that you will see the host link,then copy that then paste it in code.
 
-private key - c964d9890f71499d392f63e545fa5764da13fb30
+3. Perform actions (open browser, log in, click buttons, etc.).
+
+
+4. Stop recording — TestComplete will generate the same kind of JavaScript code automatically.
+
+
+
+
+---
+
+Would you like me to show you a step-by-step example of how to create the project and add the script (with screenshots or detailed menu paths)?
